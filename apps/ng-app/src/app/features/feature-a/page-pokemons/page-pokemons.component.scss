@@ -1,0 +1,35 @@
+:host {
+  .pokemon-list {
+    width: 200px;
+    overflow: auto;
+    border: 1px solid var(--N20);
+    padding: 8px;
+  }
+
+  .pokemon-item {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 3px;
+    text-transform: capitalize;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover {
+      background-color: var(--P5);
+    }
+
+    &.active {
+      background-color: var(--P5);
+      outline: 1px solid var(--P40);
+    }
+
+    &.selected {
+      background-color: var(--P10);
+    }
+  }
+}
